@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} ^/[a-z0-9]{8}$ [NC]
+RewriteRule (.*) /redirector.php [L]

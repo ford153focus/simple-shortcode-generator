@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>URL shortner</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+<form class="form-signin">
+    <h1 class="h3 mb-3 font-weight-normal">Enter URL</h1>
+    <label for="inputURL" class="sr-only">URL</label>
+    <input type="url" id="inputURL" class="form-control" placeholder="URL" required autofocus>
+    <label>
+        <input type="checkbox" id="inputSetShort" value="set-short-manually"> Set short URL manually
+    </label>
+    <div id="manual-hash-block">
+        <div class="alert alert-warning" role="alert">
+            8 symbols, only latin letters and digits!
+        </div>
+        <label for="inputShort" class="sr-only">Enter short code</label>
+        <input type="text" id="inputShort" class="form-control" placeholder="Enter short code" required>
+        <br/>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Generate!</button>
+    <div id="answer">
+        <br>
+        <div class="alert alert-success" role="alert">
+            TXT
+        </div>
+        <div class="alert alert-danger" role="alert">
+            TXT
+        </div>
+    </div>
+    <p class="mt-5 mb-3 text-muted">FRT &copy; 2010-2018</p>
+</form>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
